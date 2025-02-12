@@ -35,7 +35,6 @@ function App() {
         <Route path="/welcome" element={<Welcome />} />
         <Route path="/SideMenu" element={<SideMenu />} />
         <Route path="/Brand" element={<BrandDesignSearch/>} />
-        <Route path="/cosmain2" element={<CosMain2/>} />
         <Route path="/SearchBar" element={<SearchBar/>}/>
         <Route path="/BrandDP" element={<BrandDP/>}/>
 
@@ -46,6 +45,8 @@ function App() {
         {/*아래두개는 양수정님꺼*/}
         <Route path="/Carousel2" element={<Carousel2/>}/>
         <Route path="/Carousel" element={<Carousel/>}/>
+        <Route path="/cosmain2" element={<CosMain2/>} />
+
         {/*아래는 주호석님꺼*/}
         <Route path="/Upload" element={<Uploads/>}/>
         <Route path="/SearchBar2" element={<SearchBar2/>}/>

@@ -27,7 +27,7 @@ export default function CosMain2() {
                 <button className='ButtonAtLogo'>마이페이지</button>
             </div>
             <div className='ContentsWrapper'>
-                {/*<Carousel />  {/* 양수정->배너 컴포넌트 사용 */}
+                <Carousel />  {/* 양수정->배너 컴포넌트 사용 */}
                 <Carousel2 />
 
                 <div className='Content3'>

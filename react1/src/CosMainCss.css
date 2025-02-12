@@ -94,13 +94,11 @@
 .ContentSell{
     background-color: white;
     width:1500px;
-    height:1000px;
+    height:auto;
     display: flex;
     margin-left:50px;
     margin-right:50px;
     padding: 20px;
-    border-radius: 40px;
-    border-style: solid;
     
 
     
@@ -139,4 +137,5 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    background-color: white;
 }

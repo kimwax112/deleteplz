@@ -1,11 +1,12 @@
 .DesignPreview{
     width:700px;
-    height:320px;
+    height:380px;
     border: solid 1px black;
     border-radius: 50px;
     display:flex;
     padding:20px;
     justify-content: left;
+    margin-top:20px;
 
 }
 .RightPart{

@@ -4,7 +4,7 @@ import "./SideMenucss.css";
 export default function SideMenu() {
   return (
     <div>
-        
+        <div className='SideSearchWrapper'>
         <div className='SideSearchStack'> 
                 <div className='ExSearchCon' >
                 <span style={{fontWeight:'bold'}}>결과 내 검색</span>
@@ -103,6 +103,7 @@ export default function SideMenu() {
                         </li>
                     </ul>
                 </nav>
+        </div>
         </div>
     </div>
   )

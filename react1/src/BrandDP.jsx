@@ -30,14 +30,24 @@ export default function BrandDP() {
                 <button className='ButtonAtLogo'>마이페이지</button>
             </div>
             <div className='ContentsWrapper'>
-                
+            <div className='Info'>
+                <div className='InfoText'>브랜드 디자인으로 검색</div>
+                </div>
+
                 <div className='Content3'>
+                    
+
                     <div className='ContentSell'>
+                        
                         <SideMenu/>
                         <div className='SearchandResult'>
                             <SearchBar2/>
                             <div style={{marginTop:'50px'}}>
+                            
                             <BrandDesignSearch/>
+                            <BrandDesignSearch/>
+                            <BrandDesignSearch/>
+                            <p style={{marginTop:'30px'}}>&lt; 1 2 3 4 5 &gt;</p>
                             </div>
                         </div>
                     </div>
