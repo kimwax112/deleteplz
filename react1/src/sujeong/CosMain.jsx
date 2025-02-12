@@ -1,7 +1,6 @@
-import React from 'react'
+import React from 'react';
 import './CosMainCss.css';
-import SignIn from './SignIn';
-
+import MainBanner from './MainBanner'; // MainBanner 컴포넌트 임포트 (배너 랜덤 선택 처리)
 
 export default function CosMain() {
   return (
@@ -10,9 +9,9 @@ export default function CosMain() {
             <div className='LogoStuff'>
                 <img src="image/image.png" alt="이미지없음"></img>
                 <div className='Buttons1' style={{marginLeft:'auto'}}>
-                Sample 님, 환영합니다!
-                <button className='ButtonAtLogo' style={{backgroundColor:'#2C2F31'}}>로그아웃</button>
-                <button className='ButtonAtLogo' style={{backgroundColor:'#4A6171'}}>고객센터</button>
+                    Sample 님, 환영합니다!
+                    <button className='ButtonAtLogo' style={{backgroundColor:'#2C2F31'}}>로그아웃</button>
+                    <button className='ButtonAtLogo' style={{backgroundColor:'#4A6171'}}>고객센터</button>
                 </div>
             </div>
             <div className='MenuBar'> 
@@ -27,34 +26,22 @@ export default function CosMain() {
                 <button className='ButtonAtLogo'>마이페이지</button>
             </div>
             <div className='ContentsWrapper'>
-                <div className='Content2'>
-                    <div className='ImageSellleft'>
-                        <img className="shortcutimage" src='image/clothesMaking.jpg' alt="옷이미지"></img>
-                    </div>
-                    <div className='ImageSell'>
-                        <img className="shortcutimage" src='image/clothesMaking2.jpg' alt="옷이미지"></img>
-                    </div>
-                    <div className='ImageSellright'>
-                        
-                        <img className="shortcutimage" src='image/clothesMaking.jpg' alt="옷이미지"></img>
-                    </div>
-                </div>
+                <MainBanner />  {/* MainBanner로 랜덤 배너 처리 */}
+
                 <div className='Content3'>
                     <div className='ContentSell'>진행중인 계약</div>
-                    
                 </div>
                 <div className='Content3'>
                     <div className='ContentSell'>추천 디자이너 포트폴리오</div>
-                    
                 </div>
                 <div className='Content3'>
                     <div className='ContentSell'>추천 디자인</div>
-                    
                 </div>
                 
             </div>
             
             <div className='ActiveInfo'>
+                
             </div>
             <div className='StaticInfo'>
             (주)중개 플랫폼 | 경기도 부천시 원미구 신흥로56번길 25, 6층 | 팀장 :  | 팀원 :  | 사업자등록번호 : 123-45-67891
@@ -71,8 +58,6 @@ export default function CosMain() {
             Copyright © 2025 kmong Inc. All rights reserved.
             </div>
         </div>
-        
     </div>
-    
-  )
+  );
 }

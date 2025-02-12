@@ -1,12 +1,15 @@
 import React from 'react'
+import SearchBar2 from './SearchBar2'
+import SideMenu from './SideMenu'
+import BrandDesignSearch from './BrandDesignSearch'
 import './CosMainCss.css';
-import SignIn from './SignIn';
+import './BrandDPcss.css';
 
 
-export default function CosMain() {
+export default function BrandDP() {
   return (
     <div>
-        <div className='WholeWrapper'>
+         <div className='WholeWrapper'>
             <div className='LogoStuff'>
                 <img src="image/image.png" alt="이미지없음"></img>
                 <div className='Buttons1' style={{marginLeft:'auto'}}>
@@ -27,30 +30,20 @@ export default function CosMain() {
                 <button className='ButtonAtLogo'>마이페이지</button>
             </div>
             <div className='ContentsWrapper'>
-                <div className='Content2'>
-                    <div className='ImageSellleft'>
-                        <img className="shortcutimage" src='image/clothesMaking.jpg' alt="옷이미지"></img>
-                    </div>
-                    <div className='ImageSell'>
-                        <img className="shortcutimage" src='image/clothesMaking2.jpg' alt="옷이미지"></img>
-                    </div>
-                    <div className='ImageSellright'>
-                        
-                        <img className="shortcutimage" src='image/clothesMaking.jpg' alt="옷이미지"></img>
-                    </div>
-                </div>
+                
                 <div className='Content3'>
-                    <div className='ContentSell'>진행중인 계약</div>
+                    <div className='ContentSell'>
+                        <SideMenu/>
+                        <div className='SearchandResult'>
+                            <SearchBar2/>
+                            <div style={{marginTop:'50px'}}>
+                            <BrandDesignSearch/>
+                            </div>
+                        </div>
+                    </div>
                     
                 </div>
-                <div className='Content3'>
-                    <div className='ContentSell'>추천 디자이너 포트폴리오</div>
-                    
-                </div>
-                <div className='Content3'>
-                    <div className='ContentSell'>추천 디자인</div>
-                    
-                </div>
+               
                 
             </div>
             
@@ -71,8 +64,6 @@ export default function CosMain() {
             Copyright © 2025 kmong Inc. All rights reserved.
             </div>
         </div>
-        
     </div>
-    
   )
 }

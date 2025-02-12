@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom'; // useNavigate 가져오기
 import './Mainpcss.css';
 
+
 export default function Mainp() {
   const navigate = useNavigate();
   return (
