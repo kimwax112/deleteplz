@@ -19,7 +19,7 @@ import Carousel from './sujeong/Carousel';
 import Uploads from './zoo/Upload';
 import SearchBar2 from './SearchBar2';
 import BrandDP from './BrandDP';
-
+import PageClothes from './components/Clothes/PageClothes';
 
 function App() {
   return (
@@ -42,6 +42,8 @@ function App() {
         {/*아래 두개는 김세정님꺼*/}
         <Route path="/Clothes" element={<Clothes/>}/>
         <Route path="/Navbar" element={<Navbar/>}/>
+        <Route path="/PageClothes" element={<PageClothes/>}/>
+
         {/*아래두개는 양수정님꺼*/}
         <Route path="/Carousel2" element={<Carousel2/>}/>
         <Route path="/Carousel" element={<Carousel/>}/>

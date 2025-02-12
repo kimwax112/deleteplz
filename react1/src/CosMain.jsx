@@ -18,10 +18,36 @@ export default function CosMain() {
             <div className='MenuBar'> 
                 <nav>
                     <ul>
-                        <li><a href='#'>직접 의류 디자인</a></li>
-                        <li><a href='#'>제작 의뢰 맡기기</a></li>
-                        <li><a href='#'>대화방</a></li>
-                        <li><a href='#'>계약 관리</a></li>
+                    <li className="total-menu"> {/* '전체' 메뉴 추가됨 */}
+                <a href='#'>전체</a>
+                <div className="all-dropdown-menu"> {/* 하위 메뉴들을 모두 담을 영역 추가됨 */}
+                    <ul>
+                        <li><a href="#">직접 의류 디자인</a></li>
+                        <li><a href="#">제작 의뢰 맡기기</a></li>
+                        <li><a href="#">대화방</a></li>
+                        <li><a href="#">계약 관리</a></li>
+                    </ul>
+                </div>
+            </li>
+                        <li>
+                        <a href='#'>직접 의류 디자인</a>
+                            <ul className="dropdown-menu"> {/* 추가됨 */}
+                                <li><a href="#">하위메뉴1</a></li> {/* 추가됨 */}
+                                <li><a href="#">하위메뉴2</a></li> {/* 추가됨 */}
+                            </ul>
+                        </li>
+                        <li><a href='#'>제작 의뢰 맡기기</a><ul className="dropdown-menu"> {/* 추가됨 */}
+                                <li><a href="#">하위메뉴1</a></li> {/* 추가됨 */}
+                                <li><a href="#">하위메뉴2</a></li> {/* 추가됨 */}
+                            </ul></li>
+                        <li><a href='#'>대화방</a><ul className="dropdown-menu"> {/* 추가됨 */}
+                                <li><a href="#">하위메뉴1</a></li> {/* 추가됨 */}
+                                <li><a href="#">하위메뉴2</a></li> {/* 추가됨 */}
+                            </ul></li>
+                        <li><a href='#'>계약 관리</a><ul className="dropdown-menu"> {/* 추가됨 */}
+                                <li><a href="#">하위메뉴1</a></li> {/* 추가됨 */}
+                                <li><a href="#">하위메뉴2</a></li> {/* 추가됨 */}
+                            </ul></li>
                     </ul>
                 </nav>
                 <button className='ButtonAtLogo'>마이페이지</button>

@@ -8,7 +8,7 @@ export default function SearchBar2() {
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleSearch = () => {
-    alert(`옵션: ${selectedOption}, 검색어: ${searchTerm}`);
+    alert(`선택한거: ${selectedOption}, 검색어: ${searchTerm}`);
   };
   return (
     <div className="search-bar-container">
@@ -19,9 +19,9 @@ export default function SearchBar2() {
         onChange={(e) => setSelectedOption(e.target.value)}
       >
         <option value="선택하세요">이미지소스</option>
-        <option value="선택1">패션잡지</option>
-        <option value="선택2">포트폴리오</option>
-        <option value="선택3">기본샘플</option>
+        <option value="패션잡지">패션잡지</option>
+        <option value="포트폴리오">포트폴리오</option>
+        <option value="기본샘플">기본샘플</option>
       </select>
     </div>
     <input

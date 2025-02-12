@@ -24,6 +24,40 @@
     line-height: 60px;
     text-align:center;
     display: inline-block; 
+    position: relative; /* 부모 요소가 상대 위치를 가지도록 수정됨 */
+
+}
+.MenuBar > nav > ul > li:hover > .dropdown-menu { /* 메뉴 항목에 마우스를 올렸을 때 */
+    opacity: 1; /* 하위 메뉴를 보이도록 */
+    transform: translateY(0); /* 하위 메뉴를 원래 위치로 */
+}
+.MenuBar > nav > ul > li .dropdown-menu { /* 추가됨 */
+    /*display: none; /* 처음엔 보이지 않게 */
+    position: absolute;
+    top: 100%; /* 메뉴 바로 아래에 위치 */
+    left: 0;
+    background-color: #799FC4;
+    width: 100%; /* 부모 메뉴와 같은 너비 */
+    padding: 10px 0;
+    text-align: center;
+    opacity: 0; /* 기본적으로 투명하게 설정 */
+    transform: translateY(-20px); /* 처음엔 살짝 위로 올려놓기 */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* 애니메이션 효과 추가 */
+}
+.MenuBar > nav > ul > li .dropdown-menu li { /* 하위 메뉴 항목 */
+    list-style: none;
+    padding: 10px 0;
+}
+
+.MenuBar > nav > ul > li .dropdown-menu li a { /* 하위 메뉴 항목 스타일 */
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+/* 하위 메뉴 항목에 마우스를 올렸을 때 */
+.MenuBar > nav > ul > li .dropdown-menu li a:hover {
+    background-color: #2C2F31;
 }
 /*.MenuBar > nav > ul > li:not(:last-child) {
     border-right: 2px solid white;
@@ -32,7 +66,7 @@
     border-right: 2px solid white;
 }
 .MenuBar > nav > ul > li > a{
-    width: 20vw;
+    width: 12vw;
     text-decoration: none;
     display: block;
     color: #fff;
@@ -138,4 +172,68 @@
     justify-content: center;
     text-align: center;
     background-color: white;
+}
+
+
+/* '전체' 메뉴 스타일 */
+.MenuBar > nav > ul > li.total-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.MenuBar > nav > ul > li.total-menu > a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px; /* 간격을 줄여서 메뉴를 좀 더 밀집시킴 */
+}
+
+/* '전체' 메뉴의 하위 메뉴가 나오는 영역 */
+.MenuBar > nav > ul > li.total-menu .all-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #4A6171;
+    width: 100%; /* 전체 너비로 설정 */
+    padding: 10px 0;
+    box-sizing: border-box;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 999; /* 다른 메뉴보다 위에 오도록 설정 */
+}
+
+/* '전체' 메뉴에 마우스를 올리면 하위 메뉴들이 보이도록 설정 */
+.MenuBar > nav > ul > li.total-menu:hover .all-dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 각 하위 메뉴가 드롭다운되도록 설정 */
+.MenuBar > nav > ul > li.total-menu .all-dropdown-menu ul {
+    display: flex;
+    justify-content: space-around; /* 하위 메뉴들을 가로로 정렬 */
+    flex-wrap: wrap;
+}
+
+.MenuBar > nav > ul > li.total-menu .all-dropdown-menu ul li {
+    width: 20%; /* 각 하위 메뉴의 너비를 설정 */
+    padding: 10px;
+}
+
+/* 각 하위 메뉴 항목 스타일 */
+.MenuBar > nav > ul > li.total-menu .all-dropdown-menu ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+    padding: 10px 0;
+}
+
+/* 하위 메뉴 항목에 마우스를 올렸을 때 */
+.MenuBar > nav > ul > li.total-menu .all-dropdown-menu ul li a:hover {
+    background-color: #2C2F31;
 }

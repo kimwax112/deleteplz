@@ -25,7 +25,7 @@ const Clothes = () => {
   return (
     <div className="clothes-container">
       {/* 헤더 */}
-      <header className="header">
+     {/*} <header className="header">
         <h1>중개 플랫폼</h1>
         <nav className="nav-links">
           <a href="#">직접 의류 디자인</a>
@@ -36,7 +36,7 @@ const Clothes = () => {
           <a href="#">의뢰 관리</a>
           <button>시작하기</button>
         </nav>
-      </header>
+      </header>*/}
 
       <div className="title-text">
       <h3>사이트 제공 템플릿으로 디자인<br></br><br></br><br></br>
